@@ -18,6 +18,8 @@
     "packages/*"
   ],
   "devDependencies": {
+    "@commitlint/cli": "^7.1.2",
+    "@commitlint/config-conventional": "^7.1.2",
     "babel-eslint": "^9.0.0",
     "eslint": "^5.6.0",
     "eslint-config-standard": "^12.0.0",
@@ -35,6 +37,7 @@
   },
   "husky": {
     "hooks": {
+      "commitmsg": "commitlint -E GIT_PARAMS",
       "precommit": "yarn lint"
     }
   },
