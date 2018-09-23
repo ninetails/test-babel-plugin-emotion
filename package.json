@@ -1,0 +1,39 @@
+{
+  "name": "test-babel-plugin-emotion",
+  "description": "Testing babel-plugin-emotion",
+  "version": "0.0.0",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ninetails/test-babel-plugin-emotion.git"
+  },
+  "keywords": [],
+  "author": "Ninetails - Carlos Kazuo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ninetails/test-babel-plugin-emotion/issues"
+  },
+  "homepage": "https://github.com/ninetails/test-babel-plugin-emotion#readme",
+  "workspaces": [
+    "packages/*"
+  ],
+  "devDependencies": {
+    "babel-eslint": "^9.0.0",
+    "eslint": "^5.6.0",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-config-standard-react": "^7.0.2",
+    "eslint-plugin-flowtype": "^2.50.1",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-node": "^7.0.1",
+    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-react": "^7.11.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "flow-bin": "^0.81.0",
+    "flow-typed": "^2.5.1",
+    "husky": "^1.0.0-rc.15",
+    "lerna": "^3.4.0"
+  },
+  "scripts": {
+    "lint": "eslint ."
+  }
+}
