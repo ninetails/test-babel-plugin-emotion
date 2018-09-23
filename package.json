@@ -50,6 +50,7 @@
     "components:build": "lerna run build --scope=components-dev --stream",
     "components:watch": "lerna run watch --scope=components-dev --stream",
     "app:start": "lerna run start --scope=app --stream",
-    "app:build": "lerna run build --scope=app --stream"
+    "app:build": "lerna run build --scope=app --stream",
+    "storybook": "lerna run storybook --scope=storybook --stream"
   }
 }

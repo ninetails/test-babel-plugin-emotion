@@ -1,0 +1,28 @@
+{
+  "name": "storybook",
+  "version": "0.0.0",
+  "private": true,
+  "devDependencies": {
+    "@babel/core": "^7.1.0",
+    "@babel/preset-env": "^7.1.0",
+    "@babel/preset-flow": "^7.0.0",
+    "@babel/preset-react": "^7.0.0",
+    "@storybook/addon-actions": "^4.0.0-alpha.22",
+    "@storybook/addon-links": "^4.0.0-alpha.22",
+    "@storybook/addons": "^4.0.0-alpha.22",
+    "@storybook/react": "^4.0.0-alpha.22",
+    "babel-loader": "^8.0.2",
+    "babel-plugin-emotion": "^9.2.10",
+    "react-dev-utils": "^5.0.2"
+  },
+  "scripts": {
+    "storybook": "start-storybook -p 9009 -c .storybook",
+    "build-storybook": "build-storybook -c .storybook"
+  },
+  "dependencies": {
+    "emotion": "^9.2.10",
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2",
+    "react-emotion": "^9.2.10"
+  }
+}
