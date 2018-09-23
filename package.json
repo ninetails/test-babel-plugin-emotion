@@ -15,7 +15,8 @@
   },
   "homepage": "https://github.com/ninetails/test-babel-plugin-emotion#readme",
   "workspaces": [
-    "packages/*"
+    "packages/*",
+    "packages/*/dist"
   ],
   "devDependencies": {
     "@commitlint/cli": "^7.1.2",
@@ -42,6 +43,13 @@
     }
   },
   "scripts": {
-    "lint": "eslint ."
+    "bootstrap": "lerna bootstrap",
+    "lint": "eslint .",
+    "purge": "lerna run clean && lerna clean --yes && rm -rf node_modules yarn.lock",
+    "reset": "yarn purge && yarn && yarn bootstrap",
+    "components:build": "lerna run build --scope=components-dev --stream",
+    "components:watch": "lerna run watch --scope=components-dev --stream",
+    "app:start": "lerna run start --scope=app --stream",
+    "app:build": "lerna run build --scope=app --stream"
   }
 }
