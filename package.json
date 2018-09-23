@@ -33,6 +33,11 @@
     "husky": "^1.0.0-rc.15",
     "lerna": "^3.4.0"
   },
+  "husky": {
+    "hooks": {
+      "precommit": "yarn lint"
+    }
+  },
   "scripts": {
     "lint": "eslint ."
   }
